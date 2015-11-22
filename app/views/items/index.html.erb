@@ -1,5 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>オークションです！</title>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
 <h1>出品商品一覧</h1>
 <% @items.each do |item| %>
   <li><a href="/items/<%= item.id %>"><%= item.name %></a></li>
 <% end %>
-<p><a href="http://localhost:3000/items/new">新規登録はこちら！</a></p>
+<div class="button"><a href="http://localhost:3000/items/new">新規登録はこちら！</a></div>
+</body>
+</html>
